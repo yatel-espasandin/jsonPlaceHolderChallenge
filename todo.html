@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/todoStyle.css">
+    <title>To Do Administrator</title>
+</head>
+<body>
+    <main>
+        <h1>To Do Administrator</h1>
+        <div class="flex-container">
+            <div class="createTask">
+                <h2>Create a task</h2>
+                <form action="submit">
+                    <label for="taskName" id="taskName">Task name</label>
+                    <input type="text" id="taskName" placeholder="Task" required>
+                    <label for="selectState" id="selectState">Completed?</label>
+                    <select id="taskType" class="selectOption" disabled required>
+                        <option value=""></option>
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                    <button type = "submit" id = "submit-task" class="submitButton">Add</button>
+                </form>
+            </div>  
+            <div class="table">
+                <h2>Please, select the task you want to interact</h2>
+                <table id="todoTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Completado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyTodo"></tbody>
+                </table>
+            </div>      
+        </div>
+        
+    </main>
+    <script type="module" src="js/docs/todo.js"></script>
+</body>
+</html>

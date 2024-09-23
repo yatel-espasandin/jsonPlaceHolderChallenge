@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro Parcial Lab IV</title>
+    <link rel="stylesheet" href="css/userStyle.css">
+</head>
+<body>
+    <h1>JSONPlaceholder Administrator</h1>
+    <main>
+        <div class="userDiv">
+            <h2>User List</h2>
+            <h3>Please select an user to continue</h3>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="userBody"></tbody>
+            </table>
+        </div>
+    </main>
+    <div class="redirect">
+        <a href="/todo.html" id="todohref"><button id="toDo" disabled>To Do's </button></a>
+        <button id="albumList">Albums</button>
+        <button id="postList">Posts</button>
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
